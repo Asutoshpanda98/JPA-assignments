@@ -1,0 +1,44 @@
+package com.cg.iter.dao;
+
+import javax.persistence.EntityManager;
+import com.cg.iter.util.Db;
+import com.cg.iter.bean.Author;
+
+public class AuthorDaoImpl implements AuthorDao
+{
+	Db con;
+	EntityManager manager;
+
+	public AuthorDaoImpl() {
+		con = new Db();
+		manager=con.getManager();
+	}
+
+	@Override
+	public boolean addAuthor(Author author) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean deleteAuthor(Author author) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean updateAuthor(Author author) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Author findAuthor(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+
+	
+}

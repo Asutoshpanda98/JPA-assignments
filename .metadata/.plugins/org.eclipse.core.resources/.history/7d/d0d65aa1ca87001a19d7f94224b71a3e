@@ -1,0 +1,19 @@
+package com.cg.iter.dao;
+
+import javax.persistence.EntityManager;
+import com.cg.iter.util.Db;
+import com.cg.iter.bean.Author;
+
+public class AuthorDaoImpl implements AuthorDao
+{
+	Db con;
+	EntityManager manager;
+
+	public AuthorDaoImpl() {
+		con = new Db();
+		manager=con.getManager();
+	}
+
+
+	
+}

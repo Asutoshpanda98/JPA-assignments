@@ -1,0 +1,26 @@
+package com.cg.iter.dao;
+
+import javax.persistence.EntityManager;
+
+import com.cg.iter.entity.Student;
+import com.cg.iter.util.JpaUtil;
+
+public class StudentDaoImpl implements StudentDao {
+	
+	EntityManager em =JpaUtil.getEntityManager(); 
+
+	@Override
+	public boolean create(Student stud) {
+		try {
+	  
+	  em.getTransaction().begin();
+	  em.persist(stud);
+	  em.getTransaction().commit();
+	  System.out.println(em);
+		return true;
+	}catch(Exception e) {
+		e.printStackTrace();
+		return false;
+	}
+	}
+}

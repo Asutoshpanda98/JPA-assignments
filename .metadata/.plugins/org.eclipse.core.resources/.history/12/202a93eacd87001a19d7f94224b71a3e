@@ -1,0 +1,10 @@
+package com.cg.iter.ui;
+
+public class jpaMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

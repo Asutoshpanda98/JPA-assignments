@@ -1,0 +1,9 @@
+package com.cg.iter.dao;
+
+import com.cg.iter.entity.Student;
+
+public interface StudentDao {
+
+	boolean create(Student stud);
+
+}

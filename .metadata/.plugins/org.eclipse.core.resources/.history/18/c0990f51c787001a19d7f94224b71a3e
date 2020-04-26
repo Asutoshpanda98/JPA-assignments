@@ -1,0 +1,5 @@
+package com.cg.iter.bean;
+
+public class Author {
+
+}
